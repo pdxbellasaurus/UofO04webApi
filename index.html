@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <title>Code Quiz</title>
+</head>
+<body>
+    <button id="scoreLink"> <a href="./highscores.html"></a> View Highscores</button>
+    <p id="timed">Time Remaining: <span id="time">0</span></p>
+
+    <section id="welcome" class="show">
+        <h1>Coding Quiz Challenge</h1>
+        <p>Answer the following code-related questions within the time limit. 
+            Incorrect answers will pentalize your time by fifteen seconds!</p>
+        <button id="start">Start Quiz</button>
+    </section>
+
+    <section id="quiz" class="hide">
+        <p id="title">**quiz question**</p>
+        <div  id="choices"></div>
+        <p id="check" class="hide"></p>
+    </section>
+
+    <form id="complete" class="hide">
+        <h1>Quiz Complete!</h1>
+        <p id="score">Final Score: <span class="score"></span></p>
+        <input type="text" placeholder="Enter your initials" max="3" id="initials"/>
+        <button id="submit">Submit Score</button>
+    </form> 
+        
+<script src="./assets/js/script.js"></script>
+</body>
+</html>

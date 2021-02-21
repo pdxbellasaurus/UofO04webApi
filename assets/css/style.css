@@ -1,0 +1,130 @@
+/* https://www.w3schools.com/colors/colors_complementary.asp */
+:root{
+    --dkcolor: #192c26;
+    --green: #4E9780;
+    --burnt: #BE816B;
+    --bsgreen: #65857B;
+    --white: #ffffff;
+}
+
+html{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: var(--white);
+    display: block;
+    }
+
+body {
+    position: absolute;
+    left: 25%;
+    top: 15%;
+    width: 50%;
+    height: 50%;
+    border: 1px solid var(--dkcolor);
+}
+
+h1{
+    margin-top: 15%;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid var(--dkcolor);
+    border-top: 6px solid var(--burnt);
+    }
+    
+#score, #complete{
+    margin-top: 18%;
+    padding: 10px 5px;
+    line-height: normal;
+    font-size: 20px;
+}
+
+p, #title, #tablehead  {
+    padding: 10px 5px;
+    line-height: normal;
+    font-size: 20px;
+    margin: 0 2%; 
+
+}
+table {
+    width: 350px;
+    font-size: 20px;
+    margin-left: 10%;
+}
+
+thead{
+    background-color: var(--green);
+    color: var(--white);
+    font-weight: bold;
+
+}
+
+th{
+    padding: 5px;
+    text-indent: 5%;
+    text-align: left;
+}
+
+td{
+    text-indent: 5%;
+}
+
+button {
+    background-color: var(--bsgreen);
+    color:var(--white);
+    border-radius: 20px;
+    border: 2px solid var(--green);
+    min-width: 20%;
+    display: block;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    font-size: 20px;
+    padding: 0px 5px;
+    margin-left: 10%;
+}
+#again:hover, #clear:hover, button:hover{
+    background-color: var(--green);
+    border: 2px dashed var(--bsgreen);
+    color: var(--dkcolor);
+}
+
+#timed {
+    float: right;
+    margin-top: 10px;
+    padding: 10px 30px;
+    color: var(--dkcolor);
+}
+
+#scoreLink{
+    float: left;
+    margin-left: 5%;
+    margin-top: 10px;
+    padding: 5px 10px;
+    color: var(--white);
+    font-style: bold;
+    background-color: var(--dkcolor);
+}
+#quiz{
+    margin-top: 15%;
+}
+
+#start, #submit{
+    text-align: center;
+    margin: 0 auto;
+    font-variant: small-caps;
+    padding: 10px 
+}
+
+#again, #clear{
+    font-variant: small-caps;
+    padding: 10px;
+    display: inline;
+    
+}
+
+input {
+    width: 50%;
+    height: 30px;
+    margin: 20px;
+    border: 1px solid var(--burnt);
+    font-size: 20px;
+}
